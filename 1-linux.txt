@@ -1,0 +1,24 @@
+Linux
+-----
+
+Install a flavor of Ubuntu (Xubuntu is recommended). 
+
+Familiarize yourself with the operating system and the terminal. The terminal will be your main way of interacting with the os. Have a look at [1] for a quick overview.
+
+Use the cheat sheets at [2] to refresh your memory.
+
+Use the terminal to install software that will be used later:
+```
+> sudo apt-get install tree cmake doxygen git
+```
+
+We will use Sublime Text as a text editor. Download the program from [3], navigate to the `Downloads` directory and execute:
+```
+> sudo dpkg -i sublime-text*amd64.deb
+```
+
+References
+----------
+[1] https://learnpythonthehardway.org/book/appendixa.html
+[2] https://www.nixtutor.com/linux/all-the-best-linux-cheat-sheets/
+[3] https://www.sublimetext.com/3

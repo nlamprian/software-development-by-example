@@ -1,0 +1,42 @@
+Software Development
+---
+* **Operating System [Linux/Ubuntu]**
+  Before you start any software development, it is important to know your operating system [1]. You'll have to get familiar with navigating and manipulating the file system (accessing folders, copying files, etc). Know how you install software through your os' package manager and from source without causing conflicts, where the default include and library directories are, how to handle any missing software dependencies, what to do when a library is not where it is supposed to be. At a more advanced level, you should have at least an idea of the tools and services present in your os, so you can take advantage of them and write scripts that will automate certain tasks, and overall, make your experience with the os more pleasant and productive.
+* **Programming Languages [C++, Python]**
+  You should have some idea of algorithms and data structures, and know how you can use a programming language to translate a solution into code. The best way to learn programming is by working on problems. For this, a great resource is the hackerrank website [2].
+* **Build Process [CMake]**
+  When writing software, it is extremely valuable, as a first step, to directly interact with a compiler [3]. This will give you the chance to realize what the requirements are for a piece of code to be compiled. Witness how tedious and complicated it becomes to compile a project as it grows bigger, and how tools, like make [4], come to automate the build process and properly handle the dependency graph [5] between libraries. And when you get to know make and develop a strong feeling of hate towards it, you will better appreciate CMake [6], as it comes to provide higher level functionality and produce by itself the necessary Makefile, making your experience configuring your project enjoyable. Having gone through the process of using the compiler, you are not going to have any problem understanding what each cmake command is there to do.
+* **Documentation [Doxygen]**
+  Writing software is expensive and you should not make it hard for yourself and others to understand what each piece of code does. That is why you should always document your code. This isn't done in any arbitrary way. There are tools [7] that help you produce proper documentation and automatically create useful references (in html or pdf format).
+* **Unit Testing [gtest]**
+  Writing software for a big project can become an impossible task if not handled right. For any new feature you add, for any new class you create, for everything, you should write tests. This way, when you make changes to your code, you can verify that nothing, already implemented, has broken. Also, when a bug appears, since you know certain pieces of code are tested and working properly, you can better focus your investigation and not have to look through the entire project. Again, you are not alone in this effort. There are tools [8] that help in creating tests and automate the process of executing them.
+* **Version Control [git]**
+  When developing software and you get to a point where you have completed a certain functionality and you want to deliver it, you may publish a new version of your software. In other words, you are creating a point of reference where you say your software supports this set of features. Then you keep working on your project and continue adding new features. At some point you realize you could have implemented some feature in a different way and you decide that you want to start working from a previous version. How do you get access to that version? Should you have maintained a directory with copies of your software at different versions and start coping and pasting files when you want to go back? What if you are currently working on some feature and you want to try a different implementation? How do you get rid of the changes you've made so far? How can you observe those changes? What if you want you work on two different features in parallel? Do you create two different versions of your software? And then how do you merge those together? A version control system [9] comes to the rescue and takes cares of all that and many more. You won't have to worry about anything. You put your files in what is called a repository, and the vcs will keep track of everything in your project. Then, you simply tell the vcs what you want to do and it will take all necessary actions by itself, while making sure that no files get corrupted or lost.
+* **Continuous Integration [travis]**
+  You commit your changes to your repository and these changes are now integrated into your project. With every commit, a continuous integration platform [10] automatically runs your complete test suite and reports any errors/fails. If all tests run successfully, you can be confident that nothing (covered by the tests) within the entire system has broken.
+* **Software Design**
+  The decisions you make when developing software affect how well the end result is going to work, what the user experience will be, how easily maintainable and expandable the project is going to be. Poor choices may lead to dead ends. When working on any large-scale project, you realize that the most critical factor for its success is software design [11]. You never look for the easy way to do something. You always look for the proper way to do it.
+* **Development**
+  There are a number of tools that help in the debugging and performance evaluation process of your software. A debugger [12] allows to pause a program and examine the values of its variables, or see what was executed before a program crashed. Static analysis tools [13] examine your code without executing it. They detect bugs like uninitialized variables, out of bounds accesses, and others. On the other hand, dynamic analysis tools [14] execute your code and look for bugs like memory leaks from allocated space that was not freed. A profiler [15] finds out how the execution time is shared between different parts of your program. A code coverage tool [16] determines the percentage of your code that is executed when running your tests. This is a metric that you use to decide whether you need to write some more tests.
+* **Robotics Applications [Robot Operating System (ROS)]**
+  When you have acquired all the necessary skills to productively do software development, it's time to put those skills to use and create something useful. One area of extreme value and importance is robotics. Developing a working machine is a complicated task that requires a great amount of effort, as there is a plethora of requirements that need to be covered (control, sensing, mapping, localization, motion planning, perception, etc). For this, we have ROS [17]. Whether you are a hobbyist, a researcher, or an entrepreneur, ROS is here to make things possible. You can focus on the component you actually want to develop, and take advantage of all the other software that is freely available, to create a complete robotic solution. ROS is offering the infrastructure for different components to communicate with each other, the algorithms that implement the necessary functionality for a robot, and tools that help in the development and execution process. You can connect together components to build a robot, or connect together a fleet of robots to create a more interesting apllication. No matter what the hardware is, or whether your robots are in the same room or at different places on the planet, you can create your applications with ease and comfort.
+
+References
+----------
+[1] https://www.ubuntu.com/
+[2] https://www.hackerrank.com/
+[3] https://gcc.gnu.org/
+[4] https://www.gnu.org/software/make/
+[5] https://github.com/lindenb/makefile2graph
+[6] https://cmake.org/
+[7] http://www.stack.nl/~dimitri/doxygen/
+[8] https://github.com/google/googletest
+[9] https://git-scm.com/
+[10] https://travis-ci.org/
+[11] https://en.wikibooks.org/wiki/C%2B%2B_Programming/Code/Design_Patterns
+[12] https://www.gnu.org/software/gdb/
+[13] http://cppcheck.sourceforge.net/
+[14] http://valgrind.org/
+[15] https://sourceware.org/binutils/docs/gprof/index.html
+[16] https://gcc.gnu.org/onlinedocs/gcc/Gcov.html
+[17] http://www.ros.org/

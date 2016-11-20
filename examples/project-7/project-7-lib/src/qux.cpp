@@ -1,5 +1,5 @@
 #include <iostream>
-#include "project5/qux.h"
+#include "project7lib/qux.h"
 
 using namespace std;
 

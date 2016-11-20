@@ -1,4 +1,4 @@
-#include "project-4/baz.h"
+#include "project4/baz.h"
 
 int main() {
 	foo();

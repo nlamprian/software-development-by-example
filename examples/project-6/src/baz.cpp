@@ -1,5 +1,5 @@
 #include <iostream>
-#include "project4/baz.h"
+#include "project6/baz.h"
 
 using namespace std;
 

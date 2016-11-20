@@ -3,7 +3,7 @@ project-5
 
 **Intro**
 
-Configure the project with make.
+Configure a project with make.
 
 **Guide**
 

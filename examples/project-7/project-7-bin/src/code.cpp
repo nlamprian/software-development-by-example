@@ -1,5 +1,5 @@
-#include "project5/baz.h"
-#include "project5/qux.h"
+#include "project7lib/baz.h"
+#include "project7lib/qux.h"
 
 int main() {
 	foo();

@@ -21,7 +21,7 @@ Now try to execute the following:
 
 We should get an error telling us that the compiler is not able to find `baz.h`, i.e. `fatal error: baz.h: No such file or directory`. So, we have to let the compiler know where it can find `baz.h`. We do that with the `-I<include-path>` option.
 
-Please know that at an include statement, we don't just specify the name of a header file. We give a relative path from the directory we have specified to the compiler. So depending on the the `-I<include-path>` option, we adjust accordingly the include statements in the source files. Given that we are in the `project-3` directory, we will specify the `-Iinclude` option to the compiler, and we will update the include statements in the source files to contain the `project-3` directory (refering to the `project-3` directory within the `include` directory).
+Please know that at an include statement, we don't just specify the name of a header file. We give a relative path from the directory we have specified to the compiler. So depending on the the `-I<include-path>` option, we adjust accordingly the include statements in the source files. Given that we are in the `project-3` directory, we will specify the `-Iinclude` option to the compiler, and we will update the include statements in the source files to contain the `project3` directory (refering to the `project3` directory within the `include` directory).
 
 Now execute the following. This time the program should compile successfully.
 

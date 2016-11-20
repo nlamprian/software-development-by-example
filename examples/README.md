@@ -16,8 +16,17 @@ Use often the `tree` command to observe the project structure and the produced f
 Below is an overview of all the projects.
 
 **project-0**: Single source file program.
+
 **project-1**: Single source file program with functions.
+
 **project-2**: Multiple source files program.
+
 **project-3**: Compile with include path option.
+
 **project-4**: Compile with library path and link options.
-**project-5**: Configure the project with make.
+
+**project-5**: Configure a project with make.
+
+**project-6**: Configure a project with CMake.
+
+**project-7**: Link multiple CMake projects.
